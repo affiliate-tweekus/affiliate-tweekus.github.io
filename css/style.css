@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+* {
+  margin:0px;
+  padding:0px;
+  box-sizing:border-box;
+}
+
+
+body {
+  font-family: 'Varela Round', sans-serif;
+  line-height:1.6;
+  scroll-behavior: smooth;
+  width: 100%;
+}
+p
+{
+  font-size: larger;
+}
+
+#btn {
+  margin: 10px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  text-align: center;
+}
+
+#btn p {
+  font-size: 26px;
+  font-weight: 600;
+  padding-bottom: 5px;
+}
+
+#btn span {
+  font-size: 50px;
+  font-weight: 900;
+}
+
+#buy {
+  padding: 15px;
+}
+
+.back-to-top {
+  position: fixed;
+  display: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  right: 15px;
+  bottom: 15px;
+  background: #149ddd;
+  color: black;
+  transition: display 0.5s ease-in-out;
+  z-index: 99999;
+}
+.back-to-top i {
+  font-size: 24px;
+  position: absolute;
+  top: 7px;
+  left: 8px;
+  text-align: center;
+}
+
+.back-to-top:hover {
+  color: #fff;
+  background: #2eafec;
+  transition: background 0.2s ease-in-out;
+}
+
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #ddd;
+}
+::-webkit-scrollbar-thumb {
+  background: #888; 
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+a {
+  text-decoration:none;
+}
+.text-center {
+    text-align:center;
+}
+
+.grid-dark {
+    background:#f1f1f1 !important;
+}
+
+
+@keyframes loading {
+  0% {
+    transform:translate(-50%,-50%) rotate(0deg);
+  }
+  100% {
+    transform:translate(-50%,-50%) rotate(360deg);
+  }
+}
+
+.navbar {
+  position:sticky;
+  top:0px;
+  left:0px;
+  width:100%;
+  height:60px;
+  background:#111;
+  z-index: 1;
+}
+.navbar .container {
+  position:relative;
+  max-width:1000px;
+  height:100%;
+  margin:0 auto;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:0px 20px;
+  background:#111;
+}
+.navbar .logo {
+  color:#f5f5f5;
+  font-weight:600;
+  text-transform:uppercase;
+  cursor: pointer;
+  user-select: none;
+}
+.navbar .container nav ul {
+  list-style-type:none;
+  display:flex;
+}
+.navbar .container nav ul li {
+  padding:10px;
+}
+.navbar .container nav ul li a {
+  font-size:15px;
+  color:#eee;
+  font-weight:300;
+  user-select: none;
+}
+.navbar .container nav ul li a:hover {
+    color:#f5f5f5;
+}
+.navbar .toggle-button {
+  display:none;
+  cursor:pointer;
+}
+.navbar .toggle-button i {
+  color:#eee;
+  font-size:25px;
+}
+
+
+.grid {
+  padding:50px 20px;
+  background:#f1f1f1;
+}
+.grid h2 {
+  text-align:center;
+  font-weight:700;
+  font-size:30px;
+  color:#111;
+  margin-bottom:30px;
+  line-height:1;
+  user-select: none;
+}
+.grid .container {
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+}
+.grid .container .item {
+  margin:1.5% 1.5%;
+  width:30%;
+  min-width:200px;
+  border:1px solid #eee;
+  text-align:center;
+  background: #f5f5f5;
+  box-shadow: 2px 2px 8px 2px #ddd;
+  border-radius: 5px;
+  user-select: none;
+}
+
+
+.grid .container .item .box {
+  width:100%;
+  height:180px;
+}
+.grid-4.grid ,
+.grid-3.grid {
+  padding: 50px 50px;
+}
+.grid-4.grid .container .item {
+  margin:1.5% 1.5%;
+  width:22%;
+  min-width:initial;
+}
+
+.grid-3.grid .container .item {
+  margin:1.5% 1.5%;
+  width:30%;
+  min-width:initial;
+}
+.courses-grid.grid {
+    background:#f5f5f5;
+}
+.courses-grid.grid .container .item  {
+    width:170px;
+}
+
+.courses-grid.grid .container .item :hover{
+  color: #149ddd;
+}
+
+.courses-grid.grid .container .item .box :hover{
+  color: #149ddd;
+}
+.courses-grid.grid .container .item img {
+    transform:scale(1.25);
+}
+.courses-grid .tag {
+    display:inline-block;
+    text-align:center;
+    margin:0px 0px 10px;
+    padding:5px 8px;
+    background:#ddd;
+    color:#555;
+    font-size:13px;
+    border-radius:5px;
+    user-select:none;
+}
+
+.grid-4 img,
+.grid img,
+.grid-3 img {
+  text-align: center;
+  line-height: 200px;
+  width: 50%;
+  max-width: 150px;
+  object-fit: cover;
+}
+.grid .container .item .title {
+  padding: 10px;
+  font-weight: 600;
+  color: #222;
+  user-select: none;
+}
+.grid-4 {
+  background: #f5f5f5;
+}
+.view-all {
+  text-align: center;
+  margin: 20px 0px;
+  user-select: none;
+}
+.view-all a {
+
+}
+
+.center {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hidden {
+  display: none;
+}
+@media (max-width: 800px){
+  .grid-4.grid .container ,
+  .grid-3.grid .container {
+    align-items: center;
+    flex-direction: column;
+  }
+  .grid-4.grid .container .item,
+  .grid-3.grid .container .item {
+    width: 90%;
+  }
+  .form-2 .form {
+    margin:10px !important;
+  }
+  .form-2 > div {
+    width: 98% !important;
+  }
+  .form-2 > div.break {
+    display: block !important;
+  }
+  .price-text bigtext {
+      margin-top:20px;
+      display:inline-block;
+      font-size:12vw;
+  }
+}
+
+@media (max-width:700px){
+  p
+  {
+    font-size: 10px;
+  }
+}
+@media (max-width:700px){
+    .courses-grid.grid {
+        padding:50px 0px;
+    }
+    .courses-grid.grid .container {
+        flex-direction:initial;
+    }
+    .courses-grid.grid .container .item {
+        width:150px;
+    }
+  .navbar .toggle-button {
+    display:block;
+  }
+  .navbar {
+    flex-wrap:wrap;
+  }
+  .navbar nav {
+    position:absolute;
+    top:-50vh;
+    left:0px;
+    width:100%;
+    transition:all 300ms ease-in-out;
+    background:#222;
+    opacity:0.5;
+    z-index:-1;
+  }
+  .navbar nav.active {
+    top:60px;
+    opacity:1;
+  }
+  .navbar nav ul {
+    width:100%;
+    flex-wrap:wrap;
+    justify-content:center;
+  }
+  .navbar nav ul li {
+    width:30%;
+    display:block;
+    text-align:center;
+  }
+  footer {
+    padding: 20px;
+  }
+  footer .container > div {
+    width: 95%;
+    margin:20px 0px;
+  }
+  
+  
+body > .container {
+    padding:20px 20px;
+}
+
+}
+
+.btn-outline-warning {
+  border-radius: 0%;
+  border: 2px solid whitesmoke;
+ 
+  font-size: 12px;
+  font-weight: bold;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
