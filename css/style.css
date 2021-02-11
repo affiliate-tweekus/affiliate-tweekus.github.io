@@ -302,7 +302,7 @@ a {
 }
 
 @media (max-width:700px){
- p
+  p
   {
     padding: 0px 20px;
     font-size: 13px;
@@ -371,26 +371,3 @@ body > .container {
   font-weight: bold;
   
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
